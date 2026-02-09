@@ -65,7 +65,7 @@
 
 
 
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/02/08/hschool/phy/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%A3%81%E5%9C%BA%E7%9F%A5%E8%AF%86%E7%82%B9/"><span class="title">高中物理磁场知识点</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E4%BB%8E%E5%8F%A5%E4%B8%8E%E7%89%B9%E6%AE%8A%E5%8F%A5%E5%BC%8F/"><span class="title">高中英语从句与特殊句式</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B3%95/"><span class="title">高中英语词法</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E5%8A%A8%E8%AF%8D%E4%BD%93%E7%B3%BB/"><span class="title">高中英语动词体系</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E5%8F%A5%E6%B3%95%E9%AA%A8%E6%9E%B6/"><span class="title">高中英语句法骨架</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"><span class="title">高中英语语法学习计划</span></a><a class="item title" href="/2026/02/04/hello-world/"><span class="title">Hello World</span></a></div></widget>
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/02/09/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"><span class="title">个人简介</span></a><a class="item title" href="/2026/02/08/hschool/phy/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%A3%81%E5%9C%BA%E7%9F%A5%E8%AF%86%E7%82%B9/"><span class="title">高中物理磁场知识点</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E4%BB%8E%E5%8F%A5%E4%B8%8E%E7%89%B9%E6%AE%8A%E5%8F%A5%E5%BC%8F/"><span class="title">高中英语从句与特殊句式</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B3%95/"><span class="title">高中英语词法</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E5%8A%A8%E8%AF%8D%E4%BD%93%E7%B3%BB/"><span class="title">高中英语动词体系</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E5%8F%A5%E6%B3%95%E9%AA%A8%E6%9E%B6/"><span class="title">高中英语句法骨架</span></a><a class="item title" href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"><span class="title">高中英语语法学习计划</span></a><a class="item title" href="/2026/02/04/hello-world/"><span class="title">Hello World</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -823,6 +823,29 @@
     }
   });
 </script>
+
+<script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     window.codeElements = document.querySelectorAll('.code');
