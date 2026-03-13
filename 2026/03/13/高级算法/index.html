@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
   
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 8.1.1">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,22 +17,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>归档 - c00ker's blog</title>
+  <title>高级算法 - c00ker's blog</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="https://ghc00ker.github.io/archives/page/3/">
+    <meta name="description" content="2026&#x2F;3&#x2F;13Optimality最优性即，问题复杂度 &#x3D; 答案复杂度  信息论：信息获取不够，算法不能结束 答案空间：把解决问题的过程看做答案空间不断缩小的过程  信息论 信息建模：什么是信息？多少算够？ 步骤 &#x3D; 信息总量 &#x2F; 每步的信息  e.g.: findMax()中，max值要和剩下的n - 1个数字比较一次，需要n - 1个Los">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高级算法">
+<meta property="og:url" content="https://ghc00ker.github.io/2026/03/13/%E9%AB%98%E7%BA%A7%E7%AE%97%E6%B3%95/">
 <meta property="og:site_name" content="c00ker&#39;s blog">
+<meta property="og:description" content="2026&#x2F;3&#x2F;13Optimality最优性即，问题复杂度 &#x3D; 答案复杂度  信息论：信息获取不够，算法不能结束 答案空间：把解决问题的过程看做答案空间不断缩小的过程  信息论 信息建模：什么是信息？多少算够？ 步骤 &#x3D; 信息总量 &#x2F; 每步的信息  e.g.: findMax()中，max值要和剩下的n - 1个数字比较一次，需要n - 1个Los">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ghc00ker.github.io/images/avatar.jpg">
+<meta property="article:published_time" content="2026-03-13T08:37:38.000Z">
+<meta property="article:modified_time" content="2026-03-13T08:38:09.186Z">
 <meta property="article:author" content="c00ker">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://ghc00ker.github.io/images/avatar.jpg">
   
   
   
-  
+  <meta name="keywords" content="技术">
 
   <!-- feed -->
   
@@ -44,12 +49,12 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"https://ghc00ker.github.io","author":{"@type":"Person","name":"c00ker","sameAs":[],"image":"\\images\\avatar.jpg"},"name":"c00ker's blog","description":"","url":"https://ghc00ker.github.io"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"c00ker","sameAs":[],"image":"\\images\\avatar.jpg"},"dateCreated":"2026-03-13T16:37:38+08:00","dateModified":"2026-03-13T16:38:09+08:00","datePublished":"2026-03-13T16:37:38+08:00","description":"","headline":"高级算法","mainEntityOfPage":{"@type":"WebPage","@id":"https://ghc00ker.github.io/2026/03/13/%E9%AB%98%E7%BA%A7%E7%AE%97%E6%B3%95/"},"publisher":{"@type":"Organization","name":"c00ker","sameAs":[],"image":"\\images\\avatar.jpg","logo":{"@type":"ImageObject","url":"\\images\\avatar.jpg"}},"url":"https://ghc00ker.github.io/2026/03/13/%E9%AB%98%E7%BA%A7%E7%AE%97%E6%B3%95/","keywords":"技术","thumbnailUrl":null,"image":[]}</script>
   
 </head>
 <body>
 
-<div class="l_body index" id="start" layout="undefined" type="undefined" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="\images\avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">c00ker's blog</div><div class="sub normal cap">刻舟求剑，望梅止渴</div><div class="sub hover cap" style="opacity:0"> 你能来看我我就很高兴啦！</div></a></div></header>
@@ -61,21 +66,80 @@
 <div class="widgets">
 <div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
 
+
+
 <widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/03/13/%E4%BA%91%E9%99%85%E8%AE%A1%E7%AE%97%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/"><span class="title">云际计算讲座笔记</span></a><a class="item title" href="/2026/03/13/%E9%AB%98%E7%BA%A7%E7%AE%97%E6%B3%95/"><span class="title">高级算法</span></a><a class="item title" href="/2026/03/12/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B32/"><span class="title">奇思妙想2</span></a><a class="item title" href="/2026/03/03/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B31/"><span class="title">奇思妙想1</span></a><a class="item title" href="/2026/03/12/%E6%B8%B8%E6%88%8F%E6%80%8E%E6%A0%B7%E6%89%8D%E7%AE%97%E5%A5%BD%E7%8E%A9%EF%BC%9F/"><span class="title">游戏怎样才算好玩？</span></a><a class="item title" href="/2026/03/12/%E6%9C%80%E8%BF%91%E7%9A%84%E6%8A%98%E7%A3%A8/"><span class="title">最近的折磨</span></a><a class="item title" href="/2026/02/11/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%BF%BB%E8%AF%91/"><span class="title">网易云音乐翻译</span></a><a class="item title" href="/2026/02/20/2026%E6%98%A5%E8%8A%82%E5%9B%9E%E5%AE%B6%E4%B9%8B%E6%97%85/"><span class="title">2026春节回家之旅</span></a><a class="item title" href="/2026/03/03/%E5%A4%A7%E4%B8%89%E4%B8%8B%E7%9B%AE%E6%A0%87/"><span class="title">大三下目标</span></a><a class="item title" href="/2026/03/03/%E5%85%B3%E4%BA%8E%E3%80%8A%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E3%80%8B%E8%BF%99%E9%97%A8%E8%AF%BE%E7%9A%84%E6%80%9D%E8%80%83/"><span class="title">关于《编程语言设计与实现》这门课的思考</span></a></div></widget>
 </div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://c00ker-hexo-blog.oss-cn-hangzhou.aliyuncs.com/wx-qrcode.jpg" target="_blank" rel="external nofollow noopener noreferrer"><img no-lazy src="https://c00ker-hexo-blog.oss-cn-hangzhou.aliyuncs.com/weixin-icon.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="social" href="https://steamcommunity.com/profiles/76561199077484486/" target="_blank" rel="external nofollow noopener noreferrer"><img no-lazy src="https://c00ker-hexo-blog.oss-cn-hangzhou.aliyuncs.com/steam-icon.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="social" href="https://y.music.163.com/m/user?id=9030713258" target="_blank" rel="external nofollow noopener noreferrer"><img no-lazy src="https://c00ker-hexo-blog.oss-cn-hangzhou.aliyuncs.com/music-icon.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="social" href="https://c00ker-hexo-blog.oss-cn-hangzhou.aliyuncs.com/qq-qrcode.jpg" target="_blank" rel="external nofollow noopener noreferrer"><img no-lazy src="https://c00ker-hexo-blog.oss-cn-hangzhou.aliyuncs.com/qq-icon.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="social" href="https://github.com/ghc00ker" target="_blank" rel="external nofollow noopener noreferrer"><img no-lazy src="https://c00ker-hexo-blog.oss-cn-hangzhou.aliyuncs.com/github-icon.svg" / onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a></div></footer>
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="\images\avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">c00ker's blog</div><div class="sub normal cap">刻舟求剑，望梅止渴</div><div class="sub hover cap" style="opacity:0"> 你能来看我我就很高兴啦！</div></a></div></header>
-
- 
 
 
-<div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a href="/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a class="active" href="/archives/">归档</a></nav></div></div></div><div class="post-list archives"><article class="" id="archive"><div class='archive-header h4'>2099</div><div class="archive-list"><a class='post fs14' href="/about/"><time>02-09</time><span>介绍</span></a></div></article><article class="" id="archive"><div class='archive-header h4'>2026</div><div class="archive-list"><a class='post fs14' href="/2026/03/13/%E4%BA%91%E9%99%85%E8%AE%A1%E7%AE%97%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/"><time>03-13</time><span>云际计算讲座笔记</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/13/%E9%AB%98%E7%BA%A7%E7%AE%97%E6%B3%95/"><time>03-13</time><span>高级算法</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/12/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B32/"><time>03-12</time><span>奇思妙想2</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/12/%E6%9C%80%E8%BF%91%E7%9A%84%E6%8A%98%E7%A3%A8/"><time>03-12</time><span>最近的折磨</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/12/%E6%B8%B8%E6%88%8F%E6%80%8E%E6%A0%B7%E6%89%8D%E7%AE%97%E5%A5%BD%E7%8E%A9%EF%BC%9F/"><time>03-12</time><span>游戏怎样才算好玩？</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/10/OSLab%E7%AC%94%E8%AE%B0/"><time>03-10</time><span>OSLab笔记</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/10/%E9%9A%8F%E7%AC%94%E4%BA%94/"><time>03-10</time><span>随笔五</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/09/%E9%9A%8F%E7%AC%94%E5%9B%9B/"><time>03-09</time><span>随笔四</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/05/%E9%9A%8F%E7%AC%94%E4%B8%89/"><time>03-05</time><span>随笔三</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/03/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B31/"><time>03-03</time><span>奇思妙想1</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/03/%E5%A4%A7%E4%B8%89%E4%B8%8B%E7%9B%AE%E6%A0%87/"><time>03-03</time><span>大三下目标</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/03/03/%E5%85%B3%E4%BA%8E%E3%80%8A%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0%E3%80%8B%E8%BF%99%E9%97%A8%E8%AF%BE%E7%9A%84%E6%80%9D%E8%80%83/"><time>03-03</time><span>关于《编程语言设计与实现》这门课的思考</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/26/hschool/phy/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E4%BA%A4%E5%8F%98%E7%94%B5%E6%BA%90%E5%92%8C%E6%B3%95%E6%8B%89%E7%AC%AC%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94/"><time>02-26</time><span>高中物理交变电源和法拉第电磁感应</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/25/%E9%9A%8F%E7%AC%94%E4%BA%8C/"><time>02-25</time><span>随笔二</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/20/%E9%9A%8F%E7%AC%94/"><time>02-20</time><span>随笔</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/20/ai%E5%8A%A9%E7%90%86%E6%83%B3%E6%B3%95/"><time>02-20</time><span>ai助理想法</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/20/2026%E6%98%A5%E8%8A%82%E5%9B%9E%E5%AE%B6%E4%B9%8B%E6%97%85/"><time>02-20</time><span>2026春节回家之旅</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/11/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%BF%BB%E8%AF%91/"><time>02-11</time><span>网易云音乐翻译</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/08/hschool/phy/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E7%A3%81%E5%9C%BA%E7%9F%A5%E8%AF%86%E7%82%B9/"><time>02-08</time><span>高中物理磁场知识点</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E4%BB%8E%E5%8F%A5%E4%B8%8E%E7%89%B9%E6%AE%8A%E5%8F%A5%E5%BC%8F/"><time>02-06</time><span>高中英语从句与特殊句式</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E5%8A%A8%E8%AF%8D%E4%BD%93%E7%B3%BB/"><time>02-06</time><span>高中英语动词体系</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E5%8F%A5%E6%B3%95%E9%AA%A8%E6%9E%B6/"><time>02-06</time><span>高中英语句法骨架</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%B3%95/"><time>02-06</time><span>高中英语词法</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/06/hschool/eng/%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/"><time>02-06</time><span>高中英语语法学习计划</span></a></div><div class="archive-list"><a class='post fs14' href="/2026/02/04/hello-world/"><time>02-04</time><span>Hello World</span></a></div></article></div>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-03-13T08:37:38.000Z">2026-03-13</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-03-13T08:38:09.186Z">2026-03-13</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>高级算法</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h2 id="2026-3-13"><a href="#2026-3-13" class="headerlink" title="2026&#x2F;3&#x2F;13"></a>2026&#x2F;3&#x2F;13</h2><h3 id="Optimality最优性"><a href="#Optimality最优性" class="headerlink" title="Optimality最优性"></a>Optimality最优性</h3><p>即，问题复杂度 &#x3D; 答案复杂度</p>
+<ol>
+<li>信息论：信息获取不够，算法不能结束</li>
+<li>答案空间：把解决问题的过程看做答案空间不断缩小的过程</li>
+</ol>
+<h3 id="信息论"><a href="#信息论" class="headerlink" title="信息论"></a>信息论</h3><ol>
+<li>信息建模：什么是信息？多少算够？</li>
+<li>步骤 &#x3D; 信息总量 &#x2F; 每步的信息</li>
+</ol>
+<p>e.g.: findMax()中，max值要和剩下的n - 1个数字比较一次，需要n - 1个Loss（输）的信息，而每次比较会产生1次Loss的信息</p>
+<p>e.g.: 设计findMax&amp;Min()的算法<br>信息论：max: n - 1 Loss, min: n - 1 Win, &#x3D;&gt; 2n - 2，错误<br>因为对于一个x(全是win)和y(全是lose)，作比较若小于则+2信息，若大于则+0信息<br>若n为偶数，分为两组，n &#x3D; 2m，每对比较，然后在赢家里面找max，在输家里面找min</p>
+<h3 id="答案空间"><a href="#答案空间" class="headerlink" title="答案空间"></a>答案空间</h3><ol>
+<li>空间建模</li>
+<li>步骤</li>
+</ol>
+<p>e.g.: n球里找1个坏的（可轻可重），x∈{1, 2, …, 14}，最多3次称出。问n最大？<br>答案空间裂得更均匀更好<br>分析12个。<br>12*2 &#x3D; 24 &#x3D;&gt; 8 - 8 - 8,<br>1-4轻，5-8重，<br>1 2 6 (?) 5 3 9</p>
+<ol>
+<li>&lt;:12轻&#x2F;5重</li>
+<li>&#x3D;:4轻&#x2F;78重</li>
+<li>&gt;:3轻&#x2F;6重</li>
+</ol>
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+
+</div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2026/03/13/%E4%BA%91%E9%99%85%E8%AE%A1%E7%AE%97%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0/">云际计算讲座笔记</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2026/03/12/%E5%A5%87%E6%80%9D%E5%A6%99%E6%83%B32/">奇思妙想2</a></div></section></div>
+
+
+
+
+
+
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">c00ker</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2026-3-13"><span class="toc-text">2026&#x2F;3&#x2F;13</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Optimality%E6%9C%80%E4%BC%98%E6%80%A7"><span class="toc-text">Optimality最优性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E8%AE%BA"><span class="toc-text">信息论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%94%E6%A1%88%E7%A9%BA%E9%97%B4"><span class="toc-text">答案空间</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
